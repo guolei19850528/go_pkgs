@@ -9,10 +9,22 @@ import (
 //reverse slice or array and no sort
 //
 // param: x slice or array
-func ReverseNoSort(x any) {
+func ReverseNoSort[T any](x []T) {
 	sort.Slice(x, func(i, j int) bool {
 		return i > j
 	})
+}
+
+// ReverseNoSortClone
+//
+//reverse slice or array and no sort and clone
+//
+// param: x slice or array
+// return:New x
+func ReverseNoSortClone[T any](x []T) []T {
+	cloneX := append(make([]T, 0, 0), x...)
+	ReverseNoSort(cloneX)
+	return cloneX
 }
 
 // CartesianProduct cartesian permutation and combination

@@ -12,6 +12,16 @@ func TestRevNoSort(t *testing.T) {
 	fmt.Println(x)
 }
 
+func TestReverseNoSortClone(t *testing.T) {
+	x := []int{1, 4, 7, 6, 3}
+	y := slice.ReverseNoSortClone(x)
+	fmt.Println("before x ", x)
+	fmt.Println("before y ", y)
+	y[0] = 9
+	fmt.Println("after x ", x)
+	fmt.Println("after y ", y)
+}
+
 func TestCartesianProduct(t *testing.T) {
 	var x = [][]any{
 		[]any{1, 2, 3},

@@ -12,6 +12,20 @@ func ExampleReverseNoSort() {
 	//Output:
 	//[3 6 7 4 1]
 }
+func ExampleReverseNoSortClone() {
+	x := []int{1, 4, 7, 6, 3}
+	y := slice.ReverseNoSortClone(x)
+	fmt.Println("before x ", x)
+	fmt.Println("before y ", y)
+	y[0] = 9
+	fmt.Println("after x ", x)
+	fmt.Println("after y ", y)
+	//Output:
+	//before x [1 4 7 6 3]
+	//before y [3 6 7 4 1]
+	//after x [1 4 7 6 3]
+	//after y [9 6 7 4 1]
+}
 
 func ExampleCartesianProduct() {
 	var data = [][]int{

@@ -88,5 +88,13 @@ func NewCoder(name string) (Coder, error) {
 	if strings.ToLower(path.Ext(name)) == ".gif" {
 		return new(GifCoder), nil
 	}
-	return nil, fmt.Errorf("%s 扩展名不支持", name)
+	return nil, fmt.Errorf("%s extension not supported", name)
+}
+
+func GetImgByName(name string) (image.Image, error) {
+	imgCoder, err := NewCoder(name)
+	if err != nil {
+		return imgCoder.DecodeByName(name)
+	}
+	return nil, err
 }
