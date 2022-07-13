@@ -1,7 +1,7 @@
 package merge
 
 import (
-	"github.com/guolei19850528/go_pkgs/img/coder"
+	"github.com/guolei19850528/go_pkgs/image/coder"
 	xdraw "golang.org/x/image/draw"
 	"image"
 	"os"

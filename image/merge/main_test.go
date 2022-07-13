@@ -1,7 +1,7 @@
 package merge_test
 
 import (
-	"github.com/guolei19850528/go_pkgs/img/coder"
+	"github.com/guolei19850528/go_pkgs/image/coder"
 	"os"
 	"path"
 	"testing"
