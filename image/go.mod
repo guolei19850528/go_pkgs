@@ -1,4 +1,4 @@
-module github.com/guolei19850528/go_pkgs/img
+module github.com/guolei19850528/go_pkgs/image
 
 go 1.18
 
