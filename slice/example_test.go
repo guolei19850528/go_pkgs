@@ -14,10 +14,10 @@ func ExampleReverseNoSort() {
 }
 
 func ExampleCartesianProduct() {
-	var data = [][]any{
-		[]any{1, 2, 3},
-		[]any{4, 5, 6},
-		[]any{7, 8, 9},
+	var data = [][]int{
+		[]int{1, 2, 3},
+		[]int{4, 5, 6},
+		[]int{7, 8, 9},
 	}
 	results := slice.CartesianProduct(data...)
 	fmt.Println(results)

@@ -13,14 +13,14 @@ func TestRevNoSort(t *testing.T) {
 }
 
 func TestCartesianProduct(t *testing.T) {
-	//var x = [][]any{
-	//	[]any{1, 2, 3},
-	//	[]any{4, 5, 6},
-	//	[]any{7, 8, 9},
-	//}
-	//
-	//data := slice.CartesianProduct(x...)
-	//fmt.Println(data)
+	var x = [][]any{
+		[]any{1, 2, 3},
+		[]any{4, 5, 6},
+		[]any{7, 8, 9},
+	}
+
+	data := slice.CartesianProduct(x...)
+	fmt.Println(len(data))
 	var x1 = [][]any{
 		[]any{1, 2},
 		[]any{3, 4},

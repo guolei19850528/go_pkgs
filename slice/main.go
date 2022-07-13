@@ -17,14 +17,14 @@ func ReverseNoSort(x any) {
 
 // CartesianProduct cartesian permutation and combination
 //
-// param: args slice
+// param: args slice or array
 // return:
-func CartesianProduct(args ...[]any) []any {
-	results := make([]any, 0, 0)
+func CartesianProduct[T any](args ...[]T) [][]T {
+	results := make([][]T, 0, 0)
 	firstArgs, otherArgs := args[0], args[1:]
 	for _, firstArg := range firstArgs {
-		groupBase := append(make([]any, 0, 0), firstArg)
-		groupData := make([]any, 0, 0)
+		groupBase := append(make([]T, 0, 0), firstArg)
+		groupData := make([][]T, 0, 0)
 		cartesianProductHandler(&groupBase, &groupData, otherArgs...)
 		results = append(results, groupData...)
 	}
@@ -36,7 +36,7 @@ func CartesianProduct(args ...[]any) []any {
 // param: groupRow
 // param: groupData
 // param: args
-func cartesianProductHandler(groupBase *[]any, groupData *[]any, args ...[]any) {
+func cartesianProductHandler[T any](groupBase *[]T, groupData *[][]T, args ...[]T) {
 	firstArgs, otherArgs := args[0], args[1:]
 	for _, firstArg := range firstArgs {
 		if len(args) > 1 {
