@@ -3,22 +3,30 @@ package slice_test
 import (
 	"fmt"
 	"github.com/guolei19850528/go_pkgs/slice"
-	"reflect"
 	"testing"
 )
 
 func TestRevNoSort(t *testing.T) {
 	x := []int{1, 4, 7, 6, 3}
-	slice.RevNoSort(x)
+	slice.ReverseNoSort(x)
 	fmt.Println(x)
 }
 
-func TestRevNoSortClone(t *testing.T) {
-	x := []int{1, 4, 7, 6, 3}
-
-	typeOfX := reflect.TypeOf(x)
-	fmt.Println(typeOfX.Name())
-	fmt.Println(typeOfX.Kind())
-	fmt.Println(typeOfX.Field(0))
+func TestCartesianProduct(t *testing.T) {
+	//var x = [][]any{
+	//	[]any{1, 2, 3},
+	//	[]any{4, 5, 6},
+	//	[]any{7, 8, 9},
+	//}
+	//
+	//data := slice.CartesianProduct(x...)
+	//fmt.Println(data)
+	var x1 = [][]any{
+		[]any{1, 2},
+		[]any{3, 4},
+		[]any{5, 6},
+	}
+	data1 := slice.CartesianProduct(x1...)
+	fmt.Println(data1)
 
 }
