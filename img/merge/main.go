@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func SimpleMerge(name string, imgs []image.Image, r image.Rectangle, p image.Point) error {
+func SimpleMerge(name string, imgs []image.Image, r image.Rectangle, scaleR image.Rectangle, p image.Point) error {
 	pngCoder := new(coder.PngCoder)
 	newImg := image.NewRGBA(r)
 	for _, img := range imgs {
