@@ -1,2 +1,2 @@
-# go_utils
-a golang utils mod
+# go_pkgs
+a golang pkgs mod
