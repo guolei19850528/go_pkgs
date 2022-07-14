@@ -22,9 +22,17 @@ func ReverseNoSort[T any](x []T) {
 // param: x slice or array
 // return:New x
 func ReverseNoSortClone[T any](x []T) []T {
-	cloneX := append(make([]T, 0, 0), x...)
+	cloneX := Clone(x)
 	ReverseNoSort(cloneX)
 	return cloneX
+}
+
+//Clone
+//
+// param: x slice or array
+// return:New x
+func Clone[T any](x []T) []T {
+	return append(make([]T, 0, 0), x...)
 }
 
 // CartesianProduct cartesian permutation and combination
@@ -35,27 +43,27 @@ func CartesianProduct[T any](args ...[]T) [][]T {
 	results := make([][]T, 0, 0)
 	firstArgs, otherArgs := args[0], args[1:]
 	for _, firstArg := range firstArgs {
-		groupBase := append(make([]T, 0, 0), firstArg)
-		groupData := make([][]T, 0, 0)
-		cartesianProductHandler(&groupBase, &groupData, otherArgs...)
-		results = append(results, groupData...)
+		base := append(make([]T, 0, 0), firstArg)
+		data := make([][]T, 0, 0)
+		cartesianProductHandler(&base, &data, otherArgs...)
+		results = append(results, data...)
 	}
 	return results
 }
 
 // cartesianProductHandler cartesian permutation and combination handler
 //
-// param: groupRow
-// param: groupData
+// param: base
+// param: data
 // param: args
-func cartesianProductHandler[T any](groupBase *[]T, groupData *[][]T, args ...[]T) {
+func cartesianProductHandler[T any](base *[]T, data *[][]T, args ...[]T) {
 	firstArgs, otherArgs := args[0], args[1:]
 	for _, firstArg := range firstArgs {
 		if len(args) > 1 {
-			groupBaseTmp := append(*groupBase, firstArg)
-			cartesianProductHandler(&groupBaseTmp, groupData, otherArgs...)
+			baseTmp := append(*base, firstArg)
+			cartesianProductHandler(&baseTmp, data, otherArgs...)
 		} else {
-			*groupData = append(*groupData, append(*groupBase, firstArg))
+			*data = append(*data, append(*base, firstArg))
 		}
 	}
 }
