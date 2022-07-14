@@ -5,6 +5,9 @@
 go get -u github.com/guolei19850528/go_pkgs/dir@latest
 ```
 ## Example
+### dirtree
+Get folder tree recursively  
+递归获取文件夹树
 ```go
 package main
 
