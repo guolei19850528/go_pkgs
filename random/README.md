@@ -1,7 +1,7 @@
 # Dir Mod
 ## Description 简介
 > directory related processing  
-> 目录相关处理 
+> 随机相关处理 
 ## Install 
 安装
 ```shell
