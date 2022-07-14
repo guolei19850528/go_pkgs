@@ -10,6 +10,8 @@ A golang mod Packages
 go get -u github.com/guolei19850528/go_pkgs@letest
 ```
 ## MOD 模块信息
+All modules can be installed and used separately. See module information for details  
+所有模块均可单独安装使用 具体详见模块信息
 - ### dir [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/dir)
 - ### slice [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/slice)
 - ### image [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/image)
