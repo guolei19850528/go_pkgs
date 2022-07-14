@@ -5,6 +5,6 @@
 ## Install 
 安装
 ```shell
-go get -u github.com/guolei19850528/go_x_pkgs/dir@latest
+go get -u github.com/guolei19850528/go_x_pkgs/x_dir@latest
 ```
-## Document [Link 链接](https://pkg.go.dev/github.com/guolei19850528/go_x_pkgs/dir)
+## Document [Link 链接](https://pkg.go.dev/github.com/guolei19850528/go_x_pkgs/x_dir)

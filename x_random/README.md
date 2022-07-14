@@ -5,6 +5,6 @@
 ## Install 
 安装
 ```shell
-go get -u github.com/guolei19850528/go_x_pkgs/random@latest
+go get -u github.com/guolei19850528/go_x_pkgs/x_random@latest
 ```
-## Document [Link 链接](https://pkg.go.dev/github.com/guolei19850528/go_x_pkgs/random)
+## Document [Link 链接](https://pkg.go.dev/github.com/guolei19850528/go_x_pkgs/x_random)
