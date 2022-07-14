@@ -2,15 +2,14 @@ package x_merge_test
 
 import (
 	"fmt"
-	"github.com/guolei19850528/go_x_pkgs/image/x_coder"
-	"github.com/guolei19850528/go_x_pkgs/image/x_merge"
+	"github.com/guolei19850528/go_x_pkgs/x_image/x_coder"
+	"github.com/guolei19850528/go_x_pkgs/x_image/x_merge"
 	"github.com/guolei19850528/go_x_pkgs/x_slice"
 	"image"
 	"path"
 )
 
 func ExampleSimpleMerge() {
-
 	imgPath1 := "image path"
 	imgPath2 := "image path"
 	imgPath3 := "image path"
