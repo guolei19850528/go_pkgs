@@ -66,3 +66,8 @@ func ExampleCartesianProduct() {
 	//	[3 6 9],
 	//]
 }
+
+func ExampleRand() {
+	x := []int{1, 4, 7, 6, 3}
+	fmt.Println(slice.Rand(x))
+}

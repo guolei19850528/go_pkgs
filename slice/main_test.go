@@ -38,5 +38,9 @@ func TestCartesianProduct(t *testing.T) {
 	}
 	data1 := slice.CartesianProduct(x1...)
 	fmt.Println(data1)
+}
 
+func TestRand(t *testing.T) {
+	x := []int{1, 4, 7, 6, 3}
+	fmt.Println(slice.Rand(x))
 }
