@@ -1,6 +1,7 @@
 package slice
 
 import (
+	"github.com/guolei19850528/go_pkgs/random"
 	"sort"
 )
 
@@ -66,4 +67,12 @@ func cartesianProductHandler[T any](base *[]T, data *[][]T, args ...[]T) {
 			*data = append(*data, append(*base, firstArg))
 		}
 	}
+}
+
+// Rand
+//
+// param: x
+// return:
+func Rand[T any](x []T) T {
+	return x[random.RandIntN(len(x))]
 }
