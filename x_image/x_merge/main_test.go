@@ -1,4 +1,4 @@
-package merge_test
+package x_merge_test
 
 import (
 	"os"

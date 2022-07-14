@@ -1,13 +1,13 @@
-package coder_test
+package x_coder_test
 
 import (
 	"fmt"
-	"github.com/guolei19850528/go_x_pkgs/image/coder"
+	"github.com/guolei19850528/go_x_pkgs/image/x_coder"
 )
 
 func ExampleNewCoder() {
 	name := "1.png"
-	imageCoder, err := coder.NewCoder(name)
+	imageCoder, err := x_coder.NewCoder(name)
 	if err == nil {
 		fmt.Println(imageCoder)
 	}
@@ -15,7 +15,7 @@ func ExampleNewCoder() {
 
 func ExampleGetImgByName() {
 	name := "1.png"
-	img, err := coder.GetImgByName(name)
+	img, err := x_coder.GetImgByName(name)
 	if err == nil {
 		fmt.Println(img)
 	}

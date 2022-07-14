@@ -1,7 +1,7 @@
-package merge
+package x_merge
 
 import (
-	"github.com/guolei19850528/go_x_pkgs/image/coder"
+	"github.com/guolei19850528/go_x_pkgs/image/x_coder"
 	xdraw "golang.org/x/image/draw"
 	"image"
 	"os"
@@ -17,7 +17,7 @@ import (
 //
 // param: p mage.Point Uniform zoom Point
 func SimpleMerge(name string, imgs []image.Image, r image.Rectangle, p image.Point) error {
-	pngCoder := new(coder.PngCoder)
+	pngCoder := new(x_coder.PngCoder)
 	newImg := image.NewRGBA(r)
 	for _, img := range imgs {
 		imgScale := image.NewRGBA(r)
