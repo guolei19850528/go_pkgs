@@ -30,14 +30,7 @@ func TestCartesianProduct(t *testing.T) {
 	}
 
 	data := x_slice.CartesianProduct(x...)
-	fmt.Println(len(data))
-	var x1 = [][]any{
-		[]any{1, 2},
-		[]any{3, 4},
-		[]any{5, 6},
-	}
-	data1 := x_slice.CartesianProduct(x1...)
-	fmt.Println(data1)
+	fmt.Println(data)
 }
 
 func TestRand(t *testing.T) {
