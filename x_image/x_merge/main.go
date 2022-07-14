@@ -24,9 +24,10 @@ func SimpleMerge(name string, imgs []image.Image, r image.Rectangle, p image.Poi
 		xdraw.CatmullRom.Scale(imgScale, r, img, img.Bounds(), xdraw.Over, nil)
 		xdraw.Draw(newImg, r, imgScale, p, xdraw.Over)
 	}
-	if w, err := os.Create(name); err == nil {
+	w, err := os.Create(name)
+	if err == nil {
 		defer w.Close()
 		return pngCoder.Encode(w, newImg, nil)
 	}
-	return nil
+	return err
 }
