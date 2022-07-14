@@ -20,7 +20,7 @@ func ReverseNoSort[T any](x []T) {
 //reverse slice or array and no sort and clone
 //
 // param: x slice or array
-// return:New x
+// return:x clone
 func ReverseNoSortClone[T any](x []T) []T {
 	cloneX := Clone(x)
 	ReverseNoSort(cloneX)
@@ -30,7 +30,7 @@ func ReverseNoSortClone[T any](x []T) []T {
 //Clone
 //
 // param: x slice or array
-// return:New x
+// return:x clone
 func Clone[T any](x []T) []T {
 	return append(make([]T, 0, 0), x...)
 }
