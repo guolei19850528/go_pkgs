@@ -2,7 +2,7 @@ package x_random_test
 
 import (
 	"fmt"
-	"github.com/guolei19850528/go_x_pkgs/random"
+	"github.com/guolei19850528/go_x_pkgs/x_random"
 )
 
 func ExampleRandIntN() {
