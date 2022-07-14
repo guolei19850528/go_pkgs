@@ -1,4 +1,4 @@
-module github.com/guolei19850528/go_pkgs
+module github.com/guolei19850528/go_x_pkgs
 
 go 1.18
 

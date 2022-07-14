@@ -1,9 +1,9 @@
-# go_pkgs
+# go_x_pkgs
 
 ## Description 简介
 
-> A golang mod Packages  
-> 一个golang模块包
+> A golang x mod Packages  
+> 一个golang x 模块包
 
 ## Author 作者
 > GuoLei(郭磊)  
@@ -12,7 +12,7 @@
 ## Install 安装
 
 ```shell
-go get -u github.com/guolei19850528/go_pkgs@letest
+go get -u github.com/guolei19850528/go_x_pkgs@letest
 ```
 
 ## MOD 模块信息
@@ -20,8 +20,8 @@ go get -u github.com/guolei19850528/go_pkgs@letest
 > All modules can be installed and used separately. See module information for details  
 > 所有模块均可单独安装使用 具体详见模块信息
 
-> ### dir [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/dir)
-> ### slice [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/slice)
-> ### image [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/image)
-> ### encrypt [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/encrypt)
->  ### random [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/random)
+> ### x_dir [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/dir)
+> ### x_slice [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/slice)
+> ### x_image [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/image)
+> ### x_encrypt [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/encrypt)
+>  ### x_random [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/random)
