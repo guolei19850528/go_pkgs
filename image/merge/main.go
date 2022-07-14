@@ -7,6 +7,15 @@ import (
 	"os"
 )
 
+// SimpleMerge
+//
+// param: name Full path of merged image name 合并后图像名称 全路径
+//
+// param: imgs image.Image Slice Or Array image.Image 切片或数组
+//
+// param: r image.Rectangle Uniform zoom Rectangle
+//
+// param: p mage.Point Uniform zoom Point
 func SimpleMerge(name string, imgs []image.Image, r image.Rectangle, p image.Point) error {
 	pngCoder := new(coder.PngCoder)
 	newImg := image.NewRGBA(r)
