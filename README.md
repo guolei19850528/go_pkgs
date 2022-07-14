@@ -24,3 +24,4 @@ go get -u github.com/guolei19850528/go_pkgs@letest
 > ### slice [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/slice)
 > ### image [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/image)
 > ### encrypt [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/encrypt)
+>  ### random [Information 信息](https://github.com/guolei19850528/go_pkgs/tree/main/random)
