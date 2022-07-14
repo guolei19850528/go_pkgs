@@ -1,7 +1,7 @@
 package x_merge
 
 import (
-	"github.com/guolei19850528/go_x_pkgs/image/x_coder"
+	"github.com/guolei19850528/go_x_pkgs/x_image/x_coder"
 	xdraw "golang.org/x/image/draw"
 	"image"
 	"os"
