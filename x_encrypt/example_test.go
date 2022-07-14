@@ -2,7 +2,7 @@ package x_encrypt_test
 
 import (
 	"fmt"
-	"github.com/guolei19850528/go_x_pkgs/encrypt"
+	"github.com/guolei19850528/go_x_pkgs/x_encrypt"
 )
 
 func ExampleMd5() {
