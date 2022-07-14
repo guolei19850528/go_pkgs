@@ -23,5 +23,4 @@ go get -u github.com/guolei19850528/go_x_pkgs@letest
 > ### x_dir [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_dir)
 > ### x_slice [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_slice)
 > ### x_image [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_image)
-> ### x_encrypt [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_encrypt)
 >  ### x_random [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_random)
