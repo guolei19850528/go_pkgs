@@ -9,43 +9,50 @@ import (
 
 // TreeNode
 //Directory Tree Node
+//
+//目录树节点
 type TreeNode struct {
-	//node name example:"1.png"
+	//node name 节点名称
 	Name string
 
-	//node base name does not contain extension example:"1"
+	//node base name does not contain extension 节点名称 不包含扩展名
 	BaseName string
 
-	//node extension example:".png"
+	//node extension 节点扩展名
 	ExtName string
 
-	//current dir name example: "a"
+	//current dir name 当前节点所在文件夹名称
 	CurrDirName string
 
-	//base dir path example:"/Users/guolei/images"
+	//base dir 当前节点所在文件夹路径地址 不包含当前节点所在文件夹
 	BaseDirPath string
 
-	//is dir
+	//is dir 是否文件夹
 	IsDir bool
 
-	//full path example:"/Users/guolei/images/a/1.png"
+	//full path 完整路径
 	FullPath string
 
-	//file info
+	//file info os.DirEntry.Info()
 	FileInfo os.FileInfo
 
-	//file mode
+	//file mode os.DirEntry.Type()
 	Type fs.FileMode
 
-	//array of subordinate nodes
+	//array of subordinate nodes  子节点数组
 	Children []*TreeNode
 }
 
 // Tree
 //
-// param: name dir path
-// param: matchExt match extension map
-// param: sortFunc sort function
+//Get directory tree recursively 递归获取目录树
+//
+// param: name dir path 目录路径地址
+//
+// param: matchExt match extension map nil all files 匹配扩展名Map
+//
+// param: sortFunc sort function nil no sort 排序函数
+//
 // return:
 func Tree(name string, matchExt map[string]string, sortFunc func([]*TreeNode)) []*TreeNode {
 	treeNodes := make([]*TreeNode, 0, 0)

@@ -1,7 +1,11 @@
 package merge_test
 
 import (
+	"fmt"
 	"github.com/guolei19850528/go_pkgs/image/coder"
+	"github.com/guolei19850528/go_pkgs/image/merge"
+	"github.com/guolei19850528/go_pkgs/slice"
+	"image"
 	"os"
 	"path"
 	"testing"
@@ -10,7 +14,7 @@ import (
 var (
 	CwdPath, _      = os.Getwd()
 	ImageInputPath  = path.Join(CwdPath, "images", "Air", "input")
-	ImageOutputPath = path.Join(CwdPath, "images", "Air", "output")
+	ImageOutputPath = path.Join(CwdPath, "images", "Air", "output", "images")
 	ImageExtensions = map[string]string{
 		".png": ".png",
 	}
@@ -20,15 +24,22 @@ var (
 )
 
 func TestSimpleMerge(t *testing.T) {
-	imgPath1 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/img/merge/images/Air/input/a/1.png"
-	imgPath2 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/img/merge/images/Air/input/c1/1.png"
-	imgPath3 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/img/merge/images/Air/input/c2/1.png"
-	imgPath4 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/img/merge/images/Air/input/c3-f/1.png"
+	imgPath1 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/image/merge/images/Air/input/a/1.png"
+	imgPath2 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/image/merge/images/Air/input/c1/1.png"
+	imgPath3 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/image/merge/images/Air/input/c2/1.png"
+	imgPath4 := "/Users/guolei/Dev/JetBrains/GoLand/guolei-projects/go_pkgs/image/merge/images/Air/input/c3-f/1.png"
 
-	coder.GetImgByName(imgPath1)
-	coder.GetImgByName(imgPath2)
-	coder.GetImgByName(imgPath3)
-	coder.GetImgByName(imgPath4)
+	img1, _ := coder.GetImgByName(imgPath1)
+	img2, _ := coder.GetImgByName(imgPath2)
+	img3, _ := coder.GetImgByName(imgPath3)
+	img4, _ := coder.GetImgByName(imgPath4)
 
-	//merge.SimpleMerge("a.png")
+	imgs := make([]image.Image, 0, 0)
+	imgs = append(imgs, img1)
+	imgs = append(imgs, img2)
+	imgs = append(imgs, img3)
+	imgs = append(imgs, img4)
+	slice.ReverseNoSort(imgs)
+	fmt.Println(imgs)
+	merge.SimpleMerge(path.Join(ImageOutputPath, "1.png"), imgs, image.Rect(0, 0, 2200, 2200), image.Pt(0, 0))
 }

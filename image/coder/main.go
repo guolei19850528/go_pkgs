@@ -93,7 +93,7 @@ func NewCoder(name string) (Coder, error) {
 
 func GetImgByName(name string) (image.Image, error) {
 	imgCoder, err := NewCoder(name)
-	if err != nil {
+	if err == nil {
 		return imgCoder.DecodeByName(name)
 	}
 	return nil, err
