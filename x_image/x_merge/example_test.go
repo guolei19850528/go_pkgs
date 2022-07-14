@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"github.com/guolei19850528/go_x_pkgs/x_image/x_coder"
 	"github.com/guolei19850528/go_x_pkgs/x_image/x_merge"
-	"github.com/guolei19850528/go_x_pkgs/x_slice"
 	"image"
 	"path"
 )
@@ -25,7 +24,7 @@ func ExampleSimpleMerge() {
 	imgs = append(imgs, img2)
 	imgs = append(imgs, img3)
 	imgs = append(imgs, img4)
-	x_slice.ReverseNoSort(imgs)
+	//x_slice.ReverseNoSort(imgs)
 	err := x_merge.SimpleMerge(path.Join("your output path", "1.png"), imgs, image.Rect(0, 0, 2200, 2200), image.Pt(0, 0))
 	if err == nil {
 		fmt.Println("successful")
