@@ -20,8 +20,8 @@ go get -u github.com/guolei19850528/go_x_pkgs@letest
 > All modules can be installed and used separately. See module information for details  
 > 所有模块均可单独安装使用 具体详见模块信息
 
-> ### x_dir [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/dir)
-> ### x_slice [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/slice)
-> ### x_image [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/image)
-> ### x_encrypt [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/encrypt)
->  ### x_random [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/random)
+> ### x_dir [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_dir)
+> ### x_slice [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_slice)
+> ### x_image [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_image)
+> ### x_encrypt [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_encrypt)
+>  ### x_random [Information 信息](https://github.com/guolei19850528/go_x_pkgs/tree/main/x_random)
